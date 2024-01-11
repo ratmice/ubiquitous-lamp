@@ -1,0 +1,12 @@
+[package]
+name = "ambient_provider"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+default = ["ambient-authority"]
+_ambient_authority_comptime = []
+ambient-authority = ["_ambient_authority_comptime"]
+[dependencies]
+ambient-authority = {version = "0.0.2"}
